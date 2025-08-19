@@ -1,0 +1,32 @@
+# DonateTeleport Configuration File
+# Configure teleportation settings and locations
+
+# Cooldown time in seconds between teleportations (0 to disable)
+cooldown: 30
+
+# Special locations for donation ranks
+locations:
+  # VIP area coordinates
+  vip:
+    world: "world"
+    x: 100.5
+    y: 64.0
+    z: 200.5
+  
+  # Premium area coordinates  
+  premium:
+    world: "world"
+    x: -100.5
+    y: 64.0
+    z: -200.5
+
+# Messages (supports color codes with &)
+messages:
+  no-permission: "&cYou don't have permission to use this command!"
+  cooldown: "&cYou must wait {time} seconds before teleporting again!"
+  teleport-spawn: "&aTeleported to spawn!"
+  teleport-home: "&aTeleported to home!"
+  teleport-vip: "&6Teleported to VIP area!"
+  teleport-premium: "&dTeleported to Premium area!"
+  location-not-set: "&cLocation not configured! Contact an administrator."
+  config-reloaded: "&aDonateTeleport configuration reloaded!"

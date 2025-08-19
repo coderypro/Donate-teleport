@@ -1,0 +1,34 @@
+name: DonateTeleport
+version: 1.0.0
+description: A Minecraft plugin for donation-based teleportation
+author: coderypro
+main: com.coderypro.donateteleport.DonateTeleportPlugin
+api-version: 1.20
+
+commands:
+  dtp:
+    description: Main donation teleport command
+    usage: /dtp <subcommand>
+    permission: donateteleport.use
+  dtpreload:
+    description: Reload the plugin configuration
+    usage: /dtpreload
+    permission: donateteleport.admin
+  dtpadmin:
+    description: Admin commands for managing teleport locations
+    usage: /dtpadmin <subcommand>
+    permission: donateteleport.admin
+
+permissions:
+  donateteleport.use:
+    description: Allows use of basic teleportation commands
+    default: true
+  donateteleport.admin:
+    description: Allows administrative commands
+    default: op
+  donateteleport.vip:
+    description: Allows VIP teleportation features
+    default: false
+  donateteleport.premium:
+    description: Allows premium teleportation features
+    default: false

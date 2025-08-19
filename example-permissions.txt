@@ -1,0 +1,47 @@
+# Example permissions configuration for DonateTeleport
+# This is an example file showing how to set up permissions for different user groups
+# Adapt this to your specific permissions plugin (LuckPerms, PermissionsEx, etc.)
+
+# Basic group - all players
+# Permissions: donateteleport.use
+# Can use: /dtp spawn
+
+# VIP group - donors with VIP rank
+# Permissions: donateteleport.use, donateteleport.vip
+# Can use: /dtp spawn, /dtp home, /dtp vip
+
+# Premium group - donors with Premium rank
+# Permissions: donateteleport.use, donateteleport.vip, donateteleport.premium
+# Can use: All commands including /dtp premium
+
+# Admin group - server administrators
+# Permissions: donateteleport.use, donateteleport.vip, donateteleport.premium, donateteleport.admin
+# Can use: All commands including /dtpreload and /dtpadmin
+
+# Example LuckPerms commands:
+# /lp group default permission set donateteleport.use true
+# /lp group vip permission set donateteleport.use true
+# /lp group vip permission set donateteleport.vip true
+# /lp group premium permission set donateteleport.use true
+# /lp group premium permission set donateteleport.vip true
+# /lp group premium permission set donateteleport.premium true
+# /lp group admin permission set donateteleport.admin true
+
+# Example PermissionsEx configuration (permissions.yml):
+# groups:
+#   default:
+#     permissions:
+#       - donateteleport.use
+#   vip:
+#     inheritance:
+#       - default
+#     permissions:
+#       - donateteleport.vip
+#   premium:
+#     inheritance:
+#       - vip
+#     permissions:
+#       - donateteleport.premium
+#   admin:
+#     permissions:
+#       - donateteleport.admin
